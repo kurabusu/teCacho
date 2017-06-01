@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>name</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">name</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">Nosotros</a></li>
+        <li><a href="#login">Ingresar.</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contact">Contactanos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center" >
+  <h1>name</h1> 
+  <p>default log</p> 
+  <form class="form-inline">
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Ingresa tu mail para las novedades</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div class="container-fluid" id="about">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>name </h2>
+      <h4>desc  </h4>      
+      
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4>      
+      <p><strong>VISION:</strong> Our vision Lorem ipsum..</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div class="container-fluid text-center" id="login">
+  <h2>Ingresa al Sistema</h2>
+ 
+  <br>
+  <div class="row">
+    <div >
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <form action="valida/valida.php" method="POST">
+          <table align="center">
+              <tr> <td><br></td></tr>
+              <tr>
+                 <td>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="email" type="email" class="form-control" name="mail"  placeholder="Email Address" > 
+                    </div>
+                </td>
+              </tr>
+              <tr> <td><br></td></tr>
+              <tr>
+                <td>
+                   <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="contrasena"  placeholder="Password de 6 digitos "  size="20" maxlength="6" required=""> 
+                   </div>
+                 </td>
+              </tr>
+              <tr> <td><br></td></tr>
+        </table>
+        
+        <input type="submit" class="btn btn-primary" value="Ingresa al Sistema"></input>
+    </form>
+    
+    
+    </div>
+  </div>  
+</div>
+
+
+
+
+<!-- Container (Portfolio Section)
+<div class="container-fluid text-center bg-grey" id="galeria">
+  <h2>Galeria</h2><br>
+  <h4>What we have created</h4>
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="paris.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="newyork.jpg" alt="New York" width="400" height="300">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+  </div>
+   -->
+
+<div class="container-fluid text-center bg-grey" id="galeria">
+  
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel" >
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> 
+</div>
+
+<!-- Container (Pricing Section) -->
+<div class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="container-fluid bg-grey" id="contact">
+  <h2 class="text-center">Contactanos</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contactanos y responderemos a la brevedad-</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Santiago,Chile</p>
+      <p><span class="glyphicon glyphicon-phone"></span> phone number</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> mail</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Mail" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Ingresa tus Comentarios" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Este script hace la magia para que el sitio tenga el cambio de pagina lindo  -->
+<script>
+    $(document).ready(function(){
+      // Add scrollspy to <body>
+      $('body').scrollspy({target: ".navbar", offset: 50});   
+
+      // Add smooth scrolling on all links inside the navbar
+      $("#myNavbar a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        }  // End if
+      });
+    });
+</script>
+
+</body>
+</html>
